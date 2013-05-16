@@ -4,12 +4,11 @@ Project File Synchronizer is a command line tool intended to aid in the multi-pr
 setup common to a MonoGame environment. 
 
 Each platform being targed needs a separate project, however as you are developing it 
-becomes cumbersome and tedious to constantly be manually editing project files. Or 
-cluttered to throw everything into a single folder.
+becomes cumbersome and tedious to constantly be manually editing project files. 
 
 ## Overview
 
-We will use one of the platform project files as the 'base project'. Form it, all 
+We will use one of the platform project files as the 'base project'. From it, all 
 project and content files will be sync'd to the other projects using links\references. 
 This means that all of the source and assets will be located within the base
 project's folder.
@@ -39,12 +38,13 @@ each platform project yourself using whatever IDE you prefer.
 |- Base.WindowsPhone
     |- Base.WindowsPhone.csproj
 |- Base.iOS
-	|- Base.iOS.csproj
+    |- Base.iOS.csproj
 </pre>
 
 ## Adding a file
 
-To add a file, always add it to the Base project. Then execute this sync tool
+To add a file, always add it to the Base project. Then execute this sync tool. Syntax is:
+<pre>ProjectFileSynchronization.exe [path]\Base.csproj</pre>
 
 ## Removing a file
 
